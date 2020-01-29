@@ -26,33 +26,27 @@
             <form>
                 <div class="form-group">
                     <label for="form-text">Search Term </label>
-                    <input type="text" class="form-control" id="exampleInputText" splaceholder="Enter text">
+                    <input type="text" class="form-control" id="search" splaceholder="Enter text">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputText">Number of Records to Retrieve </label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                         </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected> 5 </option>
-                            <option value="4">4</option>
-                            <option value="3">3</option>
-                            <option value="2">2</option>
-                            <option value="1">1</option>
-                        </select>
+                        <input type="number" class="form-control" id="numberOf" splaceholder="Number of articles" max="10" min="1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="form-number"> Start Year (Optional) </label>
-                    <input type="number" class="form-control" id="exampleInputNumber" splaceholder="Enter Year">
+                    <input type="number" class="form-control" id="startYear" splaceholder="Enter Year">
                 </div>
                 <div class="form-group">
                     <label for="form-number"> End Year (Optional) </label>
-                    <input type="number" class="form-control" id="exampleInputNumber" splaceholder="Enter Year">
+                    <input type="number" class="form-control" id="endYear" splaceholder="Enter Year">
                 </div>
 
-                <button type="button" class="btn btn-primary btn-lg"> <i class="fas fa-search"></i> Search </button>
-                <button type="button" class="btn btn-secondary btn-lg"> <i class="fas fa-trash-alt"></i> Clear Results
+                <button type="button" class="btn btn-primary btn-lg" type="submit" id="submit"> <i class="fas fa-search"></i> Search </button>
+                <button type="button" class="btn btn-secondary btn-lg" type="reset" value="reset"> <i class="fas fa-trash-alt"></i> Clear Results
                 </button>
 
             </form>
@@ -62,9 +56,11 @@
                 <div class="card-header">
                     <i class="far fa-calendar-alt"></i>Top Articles
                 </div>
+                <div id="showArticles"></div>
 
             </div>
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="script.js"></script>
 </body>
 
 <hr>
