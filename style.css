@@ -1,0 +1,28 @@
+.jumbotron {
+    background-color: navy;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    text-emphasis: 700px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+#button {
+    background-color: white;;
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+}

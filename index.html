@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c501efa70a.js" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="jumbotron"> <i class="far fa-newspaper"></i> New York Times Search </div>
+    </header>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-calendar-alt"></i> Search Parameters
+            </div>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="form-text">Search Term </label>
+                    <input type="text" class="form-control" id="exampleInputText" splaceholder="Enter text">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputText">Number of Records to Retrieve </label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected> 5 </option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="form-number"> Start Year (Optional) </label>
+                    <input type="number" class="form-control" id="exampleInputNumber" splaceholder="Enter Year">
+                </div>
+                <div class="form-group">
+                    <label for="form-number"> End Year (Optional) </label>
+                    <input type="number" class="form-control" id="exampleInputNumber" splaceholder="Enter Year">
+                </div>
+
+                <button type="button" class="btn btn-primary btn-lg"> <i class="fas fa-search"></i> Search </button>
+                <button type="button" class="btn btn-secondary btn-lg"> <i class="fas fa-trash-alt"></i> Clear Results
+                </button>
+
+            </form>
+            <br>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="far fa-calendar-alt"></i>Top Articles
+                </div>
+
+            </div>
+
+</body>
+
+<hr>
+
+<footer> Made with lots of love <i class="fas fa-heart"></i> </footer>
+
+</html>
